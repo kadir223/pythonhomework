@@ -6,7 +6,7 @@ print(count)
 
 #q2 Sum of Elements
 total = sum(lst)
-print(total)
+print(total)a
 
 #q3 Max Element
 max_value = max(lst)
