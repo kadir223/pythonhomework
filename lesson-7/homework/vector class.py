@@ -41,14 +41,14 @@ class Vector:
         return Vector(*(a / mag for a in self.components))
 
 
-# Example Usage
+
 v1 = Vector(1, 2, 3)
 v2 = Vector(4, 5, 6)
 
-print(v1)  # Vector(1, 2, 3)
-print(v1 + v2)  # Vector(5, 7, 9)
-print(v2 - v1)  # Vector(3, 3, 3)
-print(v1 * v2)  # 32 (Dot product)
-print(3 * v1)  # Vector(3, 6, 9)
-print(v1.magnitude())  # 3.7416573867739413
-print(v1.normalize())  # Vector(0.267, 0.534, 0.801)
+print(v1)
+print(v1 + v2)
+print(v2 - v1)
+print(v1 * v2)
+print(3 * v1)
+print(v1.magnitude())
+print(v1.normalize())

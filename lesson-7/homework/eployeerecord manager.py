@@ -116,7 +116,7 @@ Enter your choice: """, end="")
                 print("Invalid choice. Please try again.")
 
 
-# Run the program
+# Run
 if __name__ == "__main__":
     manager = EmployeeManager()
     manager.menu()

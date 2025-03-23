@@ -4,7 +4,7 @@ import os
 from abc import ABC, abstractmethod
 
 
-# Abstract Base Class for File Handling
+
 class TaskStorage(ABC):
     @abstractmethod
     def save(self, tasks):
@@ -15,7 +15,7 @@ class TaskStorage(ABC):
         pass
 
 
-# JSON Storage Implementation
+
 class JSONStorage(TaskStorage):
     def __init__(self, filename="tasks.json"):
         self.filename = filename
@@ -31,7 +31,7 @@ class JSONStorage(TaskStorage):
             return [Task(**data) for data in json.load(f)]
 
 
-# CSV Storage Implementation
+
 class CSVStorage(TaskStorage):
     def __init__(self, filename="tasks.csv"):
         self.filename = filename
@@ -51,7 +51,7 @@ class CSVStorage(TaskStorage):
             return [Task(**row) for row in reader]
 
 
-# Task Class
+
 class Task:
     def __init__(self, task_id, title, description, due_date=None, status="Pending"):
         self.task_id = task_id
@@ -118,7 +118,7 @@ class TaskManager:
         print("Tasks saved successfully!")
 
 
-# CLI Menu
+
 if __name__ == "__main__":
     storage_type = input("Choose storage format (json/csv): ").strip().lower()
     storage = JSONStorage() if storage_type == "json" else CSVStorage()

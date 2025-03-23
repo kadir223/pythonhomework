@@ -4,7 +4,7 @@ import csv
 import os
 
 
-# Vector Class
+
 class Vector:
     def __init__(self, *components):
         self.components = components
