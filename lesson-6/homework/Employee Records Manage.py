@@ -1,6 +1,6 @@
 import os
 
-FileName="employee.txt"
+FileName= "../../lesson-13/homework/employee.txt"
 def add_record():
     Employee_ID=input("Enter Employee ID: ")
     Name=input("Enter Name: ")
